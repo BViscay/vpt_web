@@ -30,11 +30,16 @@ const Navbar = () => {
           </a>
           <div className={styles.menu}>
             <a href="#">RECREO</a>
-            <a href="#">JOVENES DE VIDA</a>
+            <a
+              href="https://www.instagram.com/jovenesdevidaok/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              JOVENES DE VIDA
+            </a>
             <a href="#">MATRIMONIOS</a>
             <a href="#">Misiones - GARDEY</a>
             <a href="#">Misiones - MDQ</a>
-            <a href="#">Pexels Blog</a>
           </div>
         </div>
 

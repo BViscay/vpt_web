@@ -1,6 +1,6 @@
 import styles from "./ContactForm.module.css";
 import { FcPhoneAndroid } from "react-icons/fc";
-import { HiMailOpen } from "react-icons/hi";
+// import { HiMailOpen } from "react-icons/hi";
 
 const LoginForm = () => {
   return (
@@ -34,12 +34,12 @@ const LoginForm = () => {
             </span>
             +54 249 424-4270
           </div>
-          <div>
+          {/* <div>
             <span className={styles.spanForm}>
               <HiMailOpen className={styles.formIcon} />
             </span>
-            contact@company.com
-          </div>
+            elmundoqueseviene@gmail.com
+          </div> */}
         </div>
       </form>
     </div>
