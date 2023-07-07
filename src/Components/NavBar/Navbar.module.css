@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 72px;
+  padding: 0 20px;
+  color: #222222;
+  background: #929292ab;
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 1px #222222;
+  font-family: "Euclid Circular A", "Poppins";
+  z-index: 10;
+}
+
+.logo,
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  gap: 12px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.link {
+  font-size: 19px;
+  background: none;
+  color: rgb(255, 255, 255);
+}
+.link:hover {
+  color: #7bffae;
+  text-decoration: none;
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  background: #01a081;
+  text-decoration: none;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.button:hover {
+  transform: scale3d(1.1, 1.1, 0.3);
+  -webkit-transform: scale3d(1.1, 1.1, 0.3);
+  -moz-transform: scale3d(1.1, 1.1, 0.3);
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 72px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.dropdown > a > img {
+  width: 20px;
+}
+
+.dropdown:hover .menu {
+  opacity: 1;
+  visibility: visible;
+  text-decoration: none;
+  color: #7bffae;
+}
+
+.menu {
+  position: absolute;
+  top: 60px;
+  right: -20px;
+  display: grid;
+  width: 180px;
+  padding: 8px 0;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #00be0a;
+  box-shadow: 0 40px 40px rgb(0 0 0 / 6%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s;
+}
+
+.menu::before {
+  content: "";
+  background: inherit;
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  position: absolute;
+  top: -7px;
+  right: 22px;
+  width: 12px;
+  height: 12px;
+  rotate: -45deg;
+}
+
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu > a {
+  font-size: 14px;
+  padding: 12px 20px;
+  color: #222222;
+}
+
+.menu > a:hover {
+  background: #f5f5f5;
+  color: #48a001;
+}
+
+@media (width >= 320px) {
+  .burger {
+    display: none;
+  }
+}

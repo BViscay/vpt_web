@@ -1,0 +1,87 @@
+.nav {
+  max-width: 60rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+.nav:hover {
+  pointer-events: auto;
+}
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+  font-family: "Poppins", sans-serif;
+  color: rgb(180, 180, 180);
+}
+.title:hover {
+  color: #ffffff;
+}
+.line {
+  width: 15rem;
+  height: 3px;
+  background-color: #b1b1b1;
+  margin-left: 2rem;
+  margin-right: auto;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.nav:hover .line {
+  transform: scaleX(1);
+  color: rgb(255, 255, 255);
+}
+.navList {
+  display: flex;
+  list-style: none;
+}
+.navItem {
+  margin-inline: 2.5rem;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.navItem:nth-child(odd) {
+  transform: translateY(5rem);
+}
+.navItem:nth-child(even) {
+  transform: translateY(-5rem);
+}
+.nav:hover .navItem {
+  opacity: 1;
+  transform: translateY(0);
+}
+.navLink {
+  font-size: 3.6rem;
+}
+.navLink i {
+  transition: color 0.5s;
+}
+.facebook {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(128, 128, 128, 0);
+}
+
+.youtube {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.instagram {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.youtube:hover {
+  color: #ff1e00;
+}
+.instagram:hover {
+  color: #ea4c89;
+}

@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin: 10% 2%;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.multimediaTitle {
+  font-family: "Catamaran", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  bottom: 10px;
+  position: relative;
+}
+
+.videoSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.videoContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoItem {
+  position: relative;
+  width: calc(50% - 10px);
+  padding-bottom: 2px;
+}
+
+.videoBottom {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.videoTitle {
+  font-family: "Catamaran", sans-serif;
+  font-size: 15px;
+  font-weight: 100px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.videoDescription {
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  color: #888;
+}
