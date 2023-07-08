@@ -1,6 +1,7 @@
 import styles from "./ContactForm.module.css";
 import { FcPhoneAndroid } from "react-icons/fc";
-// import { HiMailOpen } from "react-icons/hi";
+import Whatsapp from "../WhatsappButton/WhatsappButton";
+import { PiChurch } from "react-icons/pi";
 
 const LoginForm = () => {
   return (
@@ -34,14 +35,20 @@ const LoginForm = () => {
             </span>
             +54 249 424-4270
           </div>
-          {/* <div>
+
+          <div>
             <span className={styles.spanForm}>
-              <HiMailOpen className={styles.formIcon} />
+              <PiChurch className={styles.formIcon} />
             </span>
-            elmundoqueseviene@gmail.com
-          </div> */}
+            Alem 1627 - Tandil
+          </div>
         </div>
       </form>
+      <Whatsapp
+        className={styles.Whatsapp}
+        phoneNumber="+542494244270"
+        message="Hola, quiero info de la igle"
+      />
     </div>
   );
 };

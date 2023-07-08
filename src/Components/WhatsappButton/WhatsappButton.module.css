@@ -1,0 +1,9 @@
+.WhatsApp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.WhatsApp:hover {
+  cursor: pointer;
+}
