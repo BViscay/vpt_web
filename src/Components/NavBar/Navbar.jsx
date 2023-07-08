@@ -14,13 +14,25 @@ const Navbar = () => {
         <a className={styles.link} href="/">
           Home
         </a>
-        <a className={styles.link} href="/about">
+        <a
+          onClick={() => navigate("/about")}
+          className={styles.link}
+          href="/about"
+        >
           La Iglesia
         </a>
-        <a className={styles.link} href="/contenido-multimedia">
+        <a
+          onClick={() => navigate("/contenido-multimedia")}
+          className={styles.link}
+          href="/contenido-multimedia"
+        >
           Contenidos
         </a>
-        <a className={styles.link} href="/staff">
+        <a
+          onClick={() => navigate("/staff")}
+          className={styles.link}
+          href="/staff"
+        >
           Pastores
         </a>
         <div className={styles.dropdown}>

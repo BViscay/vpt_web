@@ -1,7 +1,7 @@
-import Multimedia from "../Components/Youtube/Youtube";
+import Youtube from "../Components/Youtube/Youtube";
 
 const contenidos = () => {
-  return <Multimedia />;
+  return <Youtube />;
 };
 
 export default contenidos;
