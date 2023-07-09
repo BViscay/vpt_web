@@ -1,4 +1,4 @@
-import banner from "../../../public/assets/Portada.png";
+//import banner from "../../../public/assets/Portada.png";
 import styles from "./Landpage.module.css";
 import SocialBar from "../SocialBar/SocialBar";
 import Footer from "../Footer/Footer";
@@ -6,7 +6,11 @@ import Footer from "../Footer/Footer";
 const header = () => {
   return (
     <div className={styles.banner}>
-      <img className={styles.image} src={banner} alt="" />
+      <img
+        className={styles.image}
+        src="../../../assets/Portada.png"
+        alt="Portada"
+      />
       <div className={styles.social}>
         <SocialBar />
       </div>

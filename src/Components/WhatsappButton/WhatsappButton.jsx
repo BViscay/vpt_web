@@ -1,5 +1,5 @@
 import styles from "./WhatsappButton.module.css";
-import logo from "../../../public/assets/LogoWapp.png";
+
 //eslint-disable-next-line
 const WhatsApp = ({ phoneNumber, message }) => {
   const handleClick = () => {
@@ -13,7 +13,7 @@ const WhatsApp = ({ phoneNumber, message }) => {
     <img
       onClick={handleClick}
       className={styles.WhatsApp}
-      src={logo}
+      src="../../../assets/LogoWapp.png"
       alt="WhatsApp Icon"
     />
   );

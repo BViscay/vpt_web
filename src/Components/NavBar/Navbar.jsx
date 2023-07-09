@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css";
-import logo from "../../assets/Logo.png";
-import chevron from "../../../public/assets/chevron.png";
+//import logo from "../../../public/assets/Logo.png";
+//import chevron from "../../../public/assets/chevron.png";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={logo} alt="Logo" />
+        <img src="../../../assets/Logo.png" alt="Logo" />
       </div>
       <div className={styles.container}>
         <a className={styles.link} href="/">
@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className={styles.dropdown}>
           <a className={styles.link} href="#">
             Actividades
-            <img src={chevron} alt="Chevron" />
+            <img src="../../../assets/chevron.png" alt="Chevron" />
           </a>
           <div className={styles.menu}>
             <a href="#">RECREO</a>

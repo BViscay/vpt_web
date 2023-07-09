@@ -8,7 +8,7 @@ const LoginForm = () => {
     <div className={styles.container}>
       <img
         className={styles.imgForm}
-        src="../../../public/assets/ImgForm.jpg"
+        src="../../../assets/ImgForm.jpg"
         alt=""
       />
       <form className={styles.form}>
