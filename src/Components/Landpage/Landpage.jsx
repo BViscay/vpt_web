@@ -1,4 +1,4 @@
-import banner from "../../assets/Portada.png";
+import banner from "../../../public/assets/Portada.png";
 import styles from "./Landpage.module.css";
 import SocialBar from "../SocialBar/SocialBar";
 import Footer from "../Footer/Footer";

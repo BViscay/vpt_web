@@ -62,7 +62,7 @@
   padding: 0.25em 0 0.325em;
   display: block;
   margin: 0 auto;
-  background-image: url("src/assets/FondoLetras.gif");
+  background-image: url("../../../public/assets/FondoLetras.gif");
   background-size: cover;
   color: transparent;
   background-clip: text;

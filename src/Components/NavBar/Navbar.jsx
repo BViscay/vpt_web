@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css";
 import logo from "../../assets/Logo.png";
-import chevron from "../../assets/chevron.png";
+import chevron from "../../../public/assets/chevron.png";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {

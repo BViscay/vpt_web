@@ -6,7 +6,11 @@ import { PiChurch } from "react-icons/pi";
 const LoginForm = () => {
   return (
     <div className={styles.container}>
-      <img className={styles.imgForm} src="src/assets/ImgForm.jpg" alt="" />
+      <img
+        className={styles.imgForm}
+        src="../../../public/assets/ImgForm.jpg"
+        alt=""
+      />
       <form className={styles.form}>
         <h2 className={styles.TXTform}>CONTACTANOS!</h2>
         <p className={styles.inputParr} type="Name:">
