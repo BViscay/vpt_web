@@ -2,5 +2,7 @@
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
     { "use": "npm", "buildCommand": "npm run build" }
-  ]
+  ],
+
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }
