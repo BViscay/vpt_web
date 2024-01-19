@@ -1,19 +1,19 @@
 import styles from "./SocialBar.module.css";
-import { FaFacebookF } from "react-icons/fa";
-import { AiOutlineYoutube } from "react-icons/ai";
+import { FaFacebookF,FaSpotify  } from "react-icons/fa";
+import { AiOutlineYoutube, AiOutlineWhatsApp } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
+
 const socialBar = () => {
   return (
-    <nav className={styles.nav}>
-      <h4 className={styles.title}>Seguinos en redes</h4>
+    <div className="flex text-black">
       <div className={styles.line}></div>
-      <ul className={styles.navList}>
+      <ul className="flex items-center gap-2">
         <div className={styles.navItem}>
           <a
             href="https://www.facebook.com/iglesia.tandil"
             target="_blank"
             rel="noreferrer"
-            className={styles.navlink}
+            className="text-white"
           >
             <i>
               <FaFacebookF className={styles.facebook} />
@@ -25,7 +25,7 @@ const socialBar = () => {
             href="https://www.youtube.com/@iglesiavidaparatodostandil147"
             target="_blank"
             rel="noreferrer"
-            className={styles.navlink}
+            className="text-white"
           >
             <i>
               <AiOutlineYoutube className={styles.youtube} />
@@ -37,15 +37,39 @@ const socialBar = () => {
             href="https://www.instagram.com/iglesia_vidaparatodos_tandil/"
             target="_blank"
             rel="noreferrer"
-            className={styles.navlink}
+            className="text-white"
           >
             <i>
               <BsInstagram className={styles.instagram} />
             </i>
           </a>
         </div>
+        <div className={styles.navItem}>
+          <a
+            href="https://www.instagram.com/iglesia_vidaparatodos_tandil/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-white"
+          >
+            <i>
+              <FaSpotify className={styles.instagram} />
+            </i>
+          </a>
+        </div>
+        <div className={styles.navItem}>
+          <a
+            href="https://www.instagram.com/iglesia_vidaparatodos_tandil/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-white"
+          >
+            <i>
+              <AiOutlineWhatsApp className={styles.instagram} />
+            </i>
+          </a>
+        </div>
       </ul>
-    </nav>
+    </div>
   );
 };
 

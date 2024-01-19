@@ -3,10 +3,10 @@ import Footer from "../Components/Footer/Footer";
 
 function LandPage() {
   return (
-    <>
+    <div>
       <Landpage />
       <Footer />
-    </>
+    </div>
   );
 }
 

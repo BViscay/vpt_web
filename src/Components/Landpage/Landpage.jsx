@@ -1,35 +1,43 @@
-//import banner from "../../../public/assets/Portada.png";
-import styles from "./Landpage.module.css";
-import SocialBar from "../SocialBar/SocialBar";
-import Footer from "../Footer/Footer";
+import Slider from "../Slider/Slider";
 
 const header = () => {
   return (
-    <div className={styles.banner}>
-      <img
-        className={styles.image}
-        src="../../../assets/Portada.png"
-        alt="Portada"
-      />
-      <div className={styles.social}>
-        <SocialBar />
-      </div>
-      <div className={styles.info}>
+    <div className='w-full bg-home h-auto bg-no-repeat bg-center bg-cover'>
+      <div className='w-full'>
         <div>
-          <h1 className={styles.title}>Reuniones de </h1>
-          <h1 className={styles.title}>Celebracion</h1>
-          <h2 className={styles.subtitle}>
-            Domingos 10.00 hs. y Miércoles 20.00 hs.
-          </h2>
+          <div className='pt-10 ml-10'>
+            <h1 className='font-kanit text-6xl text-white text-left font-light'>
+              Somos una{" "}
+              <span className='font-kanit text-6xl font-extrabold'>
+                Iglesia Cristiana
+              </span>{" "}
+            </h1>
+            <h2 className='font-kanit text-5xl text-white text-left mt-10'>
+              Donde compartimos la misión de extender el{" "}
+              <span className='font-kanit text-6xl text-primary-color text-left font-extrabold'>
+                EVANGELIO
+              </span>
+            </h2>
+            <p className='font-bold text-3xl text-primary-color text-left mt-10'>
+              Se parte de nosotros para realizar los sueños de Dios
+            </p>
+          </div>
         </div>
-        <p className={styles.paragraph}>
-          Mira la transmision en vivo en{" "}
-          <a className={styles.link} href="">
-            este link
-          </a>
-        </p>
+        <div className='h-[0.5px] bg-white w-[75%] ml-10 mt-14'></div>
+        <div className='pt-5 ml-10'>
+          <p className='font-bold font-kanit text-xl text-white text-left'>
+            Vistas de celebraciones familares
+          </p>
+          <p className='font-kanit text-xl text-white text-left mt-8 w-4/5'>
+            Los invitamos a participar en nuestras celebraciones familiares.
+            Juntos en adoración y alabanza. Compartimos un momento de comunión
+            como un solo cuerpo en Cristo.
+          </p>
+          <div className='pb-8 mt-8'>
+            <Slider />
+          </div>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 };
