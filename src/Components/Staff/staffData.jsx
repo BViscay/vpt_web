@@ -2,7 +2,7 @@ export const pastores = [
   {
     name: "Guillermo Hernández",
     description: `Crooked Colours are a three-piece band formed in Perth, Western Australia, consisting of members Phil Slabber, Leon Debaughn and Liam Merrett-Park. Starting out as house party DJs before forming in 2013, the trio have amassed a large following, peaking at number 1 on the Australian Dance Album ARIA Charts for their album "Langata".`,
-    backgroundUrl: "../../assets/Guillermo.svg",
+    backgroundUrl: "../../../assets/Guillermo.svg",
   },
 
   {
