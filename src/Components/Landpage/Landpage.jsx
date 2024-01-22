@@ -23,7 +23,7 @@ const header = () => {
             </p>
           </div>
         </div>
-        <div className='h-[0.5px] bg-white w-[75%] ml-10 mt-14'></div>
+        <div className='h-[1px] w-[75%] ml-10 mt-14 bg-white'></div>
         <div className='pt-5 ml-10'>
           <p className='font-bold font-kanit text-xl text-white text-left'>
             Vistas de celebraciones familares
