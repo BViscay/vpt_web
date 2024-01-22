@@ -32,14 +32,14 @@ const LoginForm = () => {
                       name='firstName'
                       label='Nombre'
                       {...register("firstName")}
-                      className='bg-dark-gray-300 bg-opacity-95 text-white'
+                      className='bg-disabled bg-opacity-95 text-white placeholder-white'
                     />
                     <TextField
                       id='city'
                       name='city'
                       label='Ciudad'
                       {...register("city")}
-                      className='bg-dark-gray-300 bg-opacity-75 ml-5 mr-5'
+                      className='bg-disabled bg-opacity-95 text-white placeholder-white ml-5 mr-5'
                     />
                   </div>
                   <div className='flex flex-col gap-10 w-full'>
@@ -48,14 +48,14 @@ const LoginForm = () => {
                       name='lastName'
                       label='Apellido'
                       {...register("lastName")}
-                      className='bg-dark-gray-300 bg-opacity-75'
+                      className='bg-disabled bg-opacity-95 text-white placeholder-white'
                     />
 
                     <TextField
                       id='telephone'
                       label='Telefono'
                       {...register("telephone")}
-                      className='bg-dark-gray-300 bg-opacity-75'
+                      className='bg-disabled bg-opacity-95 text-white placeholder-white'
                     />
                   </div>
                 </div>
@@ -67,7 +67,7 @@ const LoginForm = () => {
                     label='Dejanos tu consulta'
                     multiline
                     rows={4}
-                    className='w-full bg-dark-gray-300 bg-opacity-75'
+                    className='w-full bg-disabled bg-opacity-95 text-white placeholder-white'
                   />
                 </div>
                 <button
